@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Events</title>
+    <!-- <script>
+      function onchange() {
+        document.getElementById("textname").style.border = "1px solid red";
+      }
+
+      function onsubmit() {
+        alert("Button clicked!");
+      }
+    </script> -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Mouse Event</h1>
+     <label>mouseEvent :</label>
+    <button onclick="displayMessage()">mouseEvent</button> <br><br>
+
+    <label>Double-click</label>
+    <button ondblclick="changeColor()">Double-click</button> <br><br>
+
+    <div id="contextMenu" oncontextmenu="showAlert()">
+      contextMenu
+    </div> <br><br>
+
+    <div id="onMouseDown" onmousedown="changeColor()">
+      Click me to change my color!
+    </div>
+
+    <div>
+      <h4 onmouseover="alert('welcome')">onmouseover</h4>
+    </div>
+    <hr>
+<!-- 
+    <h1>keyboard events</h1>
+
+    <input type="text" id="Input">
+    <p id="output"></p> -->
+  </body>
+</html>

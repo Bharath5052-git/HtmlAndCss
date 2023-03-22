@@ -1,0 +1,11 @@
+#contextMenu {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+#onMouseDown {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
