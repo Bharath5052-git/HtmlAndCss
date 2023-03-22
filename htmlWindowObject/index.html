@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window Object Example</title>
+</head>
+<script src="script.js"></script>
+
+<body>
+	<h1>Window Object Method  Example</h1>
+	<small>open method : </small>
+	<button onclick="openNewWindow()">Open New Window</button><br><br>
+	<small>close method : </small>
+    <button onclick="closeWindow()">close window</button><br><br>
+	<small>addEventListener(): </small>
+    <button id="button">click Event</button><br><br>
+	<small>onblur() :</small> 
+	<input type="text" id="blur"><br><br>
+	
+	<small>confirm():</small>
+	<button onclick="onconfirm()">Try it</button> <br><br>
+
+	<button onclick="var name = prompt('What is your name?'); alert('Hello, ' + name + '!')">prompt</button> <br><br>
+	<button onclick="setTimeout(function(){ alert('welcome'); }, 3000)">setTimeout</button><br><br>
+
+
+	<h2>window history</h2>
+	<button onclick="goBack()">Go Back</button> <br><br>
+	<button onclick="goForward()">Go Forward</button>
+
+    <p>Current URL: <span id="current-url"></span></p>
+	<button onclick="redirectToGoogle()">Go to Google</button>
+	<button onclick="modifyUrl()">Modify URL</button>
+
+	<h2>Example of blur() and focus() methods:</h2>
+	<input type="text" id="inputField" placeholder="Type something here...">
+	<br><br>
+	<button onclick="setFocus()">Set Focus</button>
+	<button onclick="removeFocus()">Remove Focus</button>
+	<hr>
+
+	<h1>Base64 Example</h1>
+	<h4>asscii to binary</h4>
+    <p>Enter a base64-encoded string:</p>
+	<input type="text" id="encodedString">
+	<button onclick="decodeString()">Decode String</button>
+	<p id="decodedString"></p>
+
+	<h4>binary to ascii</h4>
+    <input type="text" id="binarytoasscii">
+	<button onclick="binaryToAsscii()">click</button>
+	<p id="binaryString"></p>
+
+	<hr>
+	<p>Click the button to start a timer:</p>
+
+<button onclick="startTimer()">Start Timer</button>
+
+
+
+</body>
+</html>
